@@ -179,3 +179,21 @@ header {
     padding: 15px 0;
   }
 }
+@mixin font-style($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+@mixin card-style($width, $height, $bg-color, $border-radius, $shadow) {
+  display: flex;
+  width: $width;
+  height: $height;
+  background-color: $bg-color;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+}
+
+@mixin transition-effect($property, $duration, $timing) {
+  transition: $property $duration $timing;

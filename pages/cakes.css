@@ -39,8 +39,9 @@ nav>a{
     text-decoration: none;
 }
 
-nav{text-align: right;
+nav{text-align: left;
 padding: 30px 50px 0 0;
+margin-inline: 10px;
 }
 
 header .texto-header {
