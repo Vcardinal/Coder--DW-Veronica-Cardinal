@@ -1,0 +1,177 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {font-family: font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor{padding: 60px 0px;
+    width:90% ;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.titulo {color: brown;
+    font-size: 30px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+/*header*/
+
+header{ width: 100%;
+    height: 600px;
+  background: #FFEFBA; 
+background: linear-gradient(to right, #ffffff78, #ffefba94), url(https://i.pinimg.com/736x/02/fb/88/02fb88ed8f5a6ea6d0447e76d6dd3ccd.jpg); 
+background-attachment: fixed;
+background-size: cover;
+position: relative;
+
+}
+
+nav>a{
+    color: rgb(78, 57, 0) ;
+    font-weight: 300;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+nav{text-align: right;
+padding: 30px 50px 0 0;
+}
+
+header .texto-header {
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.texto-header h1{
+
+    font-size: 50px;
+    color: aliceblue;
+}
+
+.texto-header h2 {
+
+    font-size: 50px;
+    color: rgb(124, 124, 112);
+}
+
+.wave {position: absolute;
+      bottom: 0;
+    width: 100%;
+  
+
+
+}
+
+/*galeria*/
+
+.Portfolio{
+background-color: beige ;
+
+}
+
+.galery-port {
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.image-port {
+
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.image-port > img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+
+
+
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.cards .card{ 
+    background-color: #fff8e1;
+    display: flex;
+    width: 48%;
+    height: 250px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.cards .card:hover {
+    transform: scale(1.05);
+}
+
+.cards .card img {
+width: 120px;
+height: 120px;
+object-fit: cover;
+border-radius: 50%;
+border: 4px solid #e0c097;
+}
+
+.cards .card h3 {
+    font-size: 24px;
+    color: #5a3e2b;
+    margin: 10px 0;
+}
+
+ @media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards .card {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+    .galery-port {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-port {
+        width: 90%;
+    }
+    .texto-header h1, .texto-header h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards .card {
+        width: 100%;
+    }
+    nav {
+        text-align: center;
+        padding: 15px 0;
+    }
+}
