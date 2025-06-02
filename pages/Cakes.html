@@ -3,114 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Cakes</title>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-
-
-  <link rel="stylesheet" href="cakes.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="cakes.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="../pages/Cookies1.html">Cookies</a>
-            <a href="../pages/Icepop.html">Icepop</a>
-                     <a href="../pages/Minipasteleria.html">Minipasteleria</a>
-            </nav>
-
-            <section class="texto-header">
-                <h1>Cakes</h1>
-                <h2>Bake with love</h2>
-             </section>
-             <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L0.00,149.60 Z" style="stroke: none; fill: rgb(251, 247, 249);"></path></svg></div>
-    </header>
-    <main>
+    <header class="bg-light">
+        <nav class="d-flex justify-content-center py-3">
+            <a href="../index.html" class="mx-3 text-decoration-none">Home</a>
+            <a href="../pages/Cookies1.html" class="mx-3 text-decoration-none">Cookies</a>
+            <a href="../pages/Icepop.html" class="mx-3 text-decoration-none">Icepop</a>
+            <a href="../pages/Minipasteleria.html" class="mx-3 text-decoration-none">Minipasteleria</a>
+        </nav>
+        <section class="text-center py-4">
+            <h1 class="display-4">Cakes</h1>
+            <h2 class="lead">Bake with love</h2>
+        </section>
         
-            <section   class="Portfolio">
-            <div class="Matriz">
-                <h2 class="Titulo">Galery</h2>
-                <div class="galery-port">
-                <div class="image-port">
-                    <img src="https://i.pinimg.com/736x/ec/5e/de/ec5edec765dd8f41cfa278770067c051.jpg" alt="">
-                </div>    
+    </header>
 
-                <div class="image-port">
-                    <img src="https://i.pinimg.com/736x/e2/bd/33/e2bd333d92ff609945994bad8d3885f2.jpg" alt="">
-                </div>    
+    <main>
+        <section class="container py-5">
+            <h2 class="text-center mb-4">Galería</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+                <div class="col"><img src="https://i.pinimg.com/736x/ec/5e/de/ec5edec765dd8f41cfa278770067c051.jpg" class="img-fluid rounded" alt="Cake"></div>
+                <div class="col"><img src="https://i.pinimg.com/736x/e2/bd/33/e2bd333d92ff609945994bad8d3885f2.jpg" class="img-fluid rounded" alt="Cake"></div>
+                <div class="col"><img src="https://i.pinimg.com/736x/d9/c1/60/d9c160707c6b09f2d9ae488a0086bab5.jpg" class="img-fluid rounded" alt="Cake"></div>
+                <div class="col"><img src="https://i.pinimg.com/736x/ff/ce/b9/ffceb95ee093774b5f560e78afee3c80.jpg" class="img-fluid rounded" alt="Cake"></div>
+                <div class="col"><img src="https://i.pinimg.com/736x/43/2f/c8/432fc8b3e136f33cc2fdc1289cb9ca73.jpg" class="img-fluid rounded" alt="Cake"></div>
+                <div class="col"><img src="https://i.pinimg.com/736x/28/94/b0/2894b03d494194e4f5ba18210c0576b3.jpg" class="img-fluid rounded" alt="Cake"></div>
+                <div class="col"><img src="https://i.pinimg.com/736x/5a/74/2d/5a742ddf5773f060466162bdb29fcbd0.jpg" class="img-fluid rounded" alt="Cake"></div>
+                <div class="col"><img src="https://i.pinimg.com/736x/a9/ee/fe/a9eefef87434c278069d150d49e6ce79.jpg" class="img-fluid rounded" alt="Cake"></div>
+            </div>
+        </section>
 
-                <div class="image-port">
-                    <img src="https://i.pinimg.com/736x/d9/c1/60/d9c160707c6b09f2d9ae488a0086bab5.jpg" alt="">
-                </div>    
-
-                <div class="image-port">
-                    <img src="https://i.pinimg.com/736x/ff/ce/b9/ffceb95ee093774b5f560e78afee3c80.jpg" alt="">
-                </div>    
-
-                <div class="image-port">
-                    <img src="https://i.pinimg.com/736x/43/2f/c8/432fc8b3e136f33cc2fdc1289cb9ca73.jpg" alt="">
-                </div>    
-
-                <div class="image-port">
-                    <img src="https://i.pinimg.com/736x/28/94/b0/2894b03d494194e4f5ba18210c0576b3.jpg" alt="">
-                </div>    
-
-                <div class="image-port">
-                    <img src="https://i.pinimg.com/736x/5a/74/2d/5a742ddf5773f060466162bdb29fcbd0.jpg" alt="">
-                </div>  
-                 <div class="image-port">
-                    <img src="https://i.pinimg.com/736x/a9/ee/fe/a9eefef87434c278069d150d49e6ce79.jpg" alt="">
-                </div>   
-
+        <section class="container py-5">
+            <h2 class="text-center mb-4">Sabores Deli</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4">
+                <div class="col text-center">
+                    <img src="https://i.pinimg.com/736x/8d/c9/46/8dc946b05b3e411632649908b1fa780f.jpg" class="img-fluid rounded mb-2" alt="Coco">
+                    <h5>Coco</h5>
                 </div>
+                <div class="col text-center">
+                    <img src="https://i.pinimg.com/736x/07/7c/41/077c41d93b331b866e27b68ea485e4fa.jpg" class="img-fluid rounded mb-2" alt="Chocolate">
+                    <h5>Chocolate</h5>
                 </div>
-            
-            </section>
+                <div class="col text-center">
+                    <img src="https://i.pinimg.com/736x/48/25/c6/4825c6145a4e96c5d8a65d7a7ffe2a55.jpg" class="img-fluid rounded mb-2" alt="Vainilla">
+                    <h5>Vainilla</h5>
+                </div>
+                <div class="col text-center">
+                    <img src="https://i.pinimg.com/736x/99/33/cb/9933cb7508814a7455b50f8306347e64.jpg" class="img-fluid rounded mb-2" alt="Mocha">
+                    <h5>Mocha</h5>
+                </div>
+            </div>
+        </section>
+    </main>
 
- 
-
-          </main>
-
-                     <Section class="Flavor contenedor">
-<h2 class="titulo">Sabores Deli</h2>
-<div class="cards">
-    <div class="card">
-          <h4>Coco</h4>
-    <img src="https://i.pinimg.com/736x/8d/c9/46/8dc946b05b3e411632649908b1fa780f.jpg" alt="">
+<footer style="background-color: #433c02; color: white; padding: 30px 0;">
+  <div class="container text-center">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-6 mb-4 mb-md-0">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419185.17458825966!2d-56.52712040995068!3d-34.834004533391145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80ffc63bf7d3%3A0x6b321b2e355bec99!2sMontevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1743991931586!5m2!1ses-419!2suy" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
-
-    <div class="card">
-          <h4>Chocolate</h4>
-    <img src="https://i.pinimg.com/736x/07/7c/41/077c41d93b331b866e27b68ea485e4fa.jpg" alt="">
-      </div>
-
-    <div class="card">
-        <h4>Vainilla</h4>
-    <img src="https://i.pinimg.com/736x/48/25/c6/4825c6145a4e96c5d8a65d7a7ffe2a55.jpg" alt="">
-    </div>
-
-    <div class="card">
-        <h4>Mocha</h4>
-            <img src="https://i.pinimg.com/736x/99/33/cb/9933cb7508814a7455b50f8306347e64.jpg" alt="">
+      <div class="col-md-6">
+        <h5>Seguinos en redes</h5>
+        <div class="social-icons mt-3">
+          <a href="https://facebook.com" target="_blank" class="me-3 text-white fs-3"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/_deli_cakes/" target="_blank" class="me-3 text-white fs-3"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/5491134567890" target="_blank" class="text-white fs-3"><i class="fab fa-whatsapp"></i></a>
         </div>
-</div>
-            </Section>
-    <footer>
-      <!-- FOOTER CON MAPA -->
-  <footer class="bg-dark text-white text-center py-4">
-    <div class="container">
-      <h5>Ubicación</h5>
-      <div class="ratio ratio-16x9">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419185.17458825966!2d-56.52712040995068!3d-34.834004533391145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80ffc63bf7d3%3A0x6b321b2e355bec99!2sMontevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1743991931586!5m2!1ses-419!2suy"
-          style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-      </div>
+          </div>
     </div>
-
-    </footer>
-    
-</body>
+  </div>
+</footer>
 </html>
+

@@ -1,178 +1,124 @@
-*{margin: 0;
-padding: 0;
-box-sizing: border-box;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body {font-family: font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+header {
+  background: linear-gradient(to right, #fff8f0, #fde6f2),
+              url('https://i.pinimg.com/originals/c9/7d/b0/c97db05aa2ad14559e43e552c2c32a6d.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #6b3e26;
+  text-align: center;
+  padding: 100px 20px 0;
+  position: relative;
 }
 
-.contenedor{padding: 60px 0px;
-    width:90% ;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-
-}
-
-.titulo {color: brown;
-    font-size: 30px;
-    margin-bottom: 60px;
-    text-align: center;
-}
-
-/*header*/
-
-header{ width: 100%;
-    height: 600px;
-  background: #FFEFBA; 
-background: linear-gradient(to right, #ffffff78, #ffefba94), url(https://i.pinimg.com/736x/02/fb/88/02fb88ed8f5a6ea6d0447e76d6dd3ccd.jpg); 
-background-attachment: fixed;
-background-size: cover;
-position: relative;
-
-}
-
-nav>a{
-    color: rgb(78, 57, 0) ;
-    font-weight: 300;
-    margin-right: 10px;
-    text-decoration: none;
-}
-
-nav{text-align: left;
-padding: 30px 50px 0 0;
-margin-inline: 10px;
-}
-
-header .texto-header {
-    display: flex;
-    height: 430px;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-
-}
-
-.texto-header h1{
-
-    font-size: 50px;
-    color: aliceblue;
+.texto-header h1 {
+  font-size: 4rem;
+  font-family: 'Georgia', serif;
 }
 
 .texto-header h2 {
-
-    font-size: 50px;
-    color: rgb(124, 124, 112);
+  font-size: 2rem;
+  margin-top: 0.5rem;
 }
 
-.wave {position: absolute;
-      bottom: 0;
-    width: 100%;
-  
-
-
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 15px;
+  font-weight: bold;
 }
 
-/*galeria*/
-
-.Portfolio{
-background-color: beige ;
-
+nav a {
+  text-decoration: none;
+  color: #6b3e26;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
-.galery-port {
-
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-
+nav a:hover {
+  color: #b45f06;
 }
 
-.image-port {
 
-    width: 24%;
-    margin-bottom: 10px;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
-.image-port > img{
-width: 100%;
-height: 100%;
-object-fit: cover;
-display: block;
 
-
-
+.Portfolio h2 {
+  color: #6b3e26;
+  font-family: 'Georgia', serif;
 }
 
-.cards {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
+.card-img-top {
+  border-radius: 0.5rem;
 }
 
-.cards .card{ 
-    background-color: #fff8e1;
-    display: flex;
-    width: 48%;
-    height: 250px;
-    align-items: center;
-    justify-content: space-evenly;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+
+.Flavor {
+  padding-top: 2rem;
 }
 
-.cards .card:hover {
-    transform: scale(1.05);
+.Flavor h2 {
+  color: #6b3e26;
+  font-family: 'Georgia', serif;
 }
 
-.cards .card img {
-width: 120px;
-height: 120px;
-object-fit: cover;
-border-radius: 50%;
-border: 4px solid #e0c097;
+.sabor-card img {
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
 }
 
-.cards .card h3 {
-    font-size: 24px;
-    color: #5a3e2b;
-    margin: 10px 0;
+.sabor-card:hover img {
+  transform: scale(1.05);
 }
 
- @media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-    .cards .card {
-        width: 90%;
-        margin-bottom: 15px;
-    }
-    .galery-port {
-        flex-direction: column;
-        align-items: center;
-    }
-    .image-port {
-        width: 90%;
-    }
-    .texto-header h1, .texto-header h2 {
-        font-size: 30px;
-    }
+.card-title {
+  color: #a0522d;
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
-@media (max-width: 480px) {
-    .cards .card {
-        width: 100%;
-    }
-    nav {
-        text-align: center;
-        padding: 15px 0;
-    }
+
+footer {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+footer h5 {
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffc107;
+}
+.formulario-sabores {
+  background-color: #fff6f8;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.formulario-sabores h2 {
+  color: #6b3e26;
+  font-family: 'Georgia', serif;
+}
+
+.form-check-label {
+  font-weight: 500;
+  color: #5c3d25;
 }

@@ -54,7 +54,7 @@ body {
   
   /* Footer */
   footer {
-    background-color: #6d4c41;
+    background-color: #ebb9a9;
     color: white;
   }
   
@@ -62,5 +62,11 @@ body {
     margin-bottom: 1rem;
     color: #fbe9e7;
   }
+
+  footer .social-icons a:hover {
+  color: #f652a4; 
+  transition: color 0.3s ease;
+}
+
   
 
